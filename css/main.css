@@ -1,0 +1,245 @@
+.navbar{
+  background: #2571b3;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+}
+
+.navbar-nav .dropdown-menu{
+  margin-top: 0;
+}
+.dropdown-item{
+  color: #2571b3;
+}
+.dropdown-item:hover{
+  background: #2571b3;
+   color: #FFF;
+}
+
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: #FFF;
+}
+.navbar-toggler .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+.navbar-toggler{
+    padding: 0;
+    border: none;
+    outline: 0;
+    margin-right: 7px;
+}
+
+.navbar-toggler:focus{
+    outline: 0;
+}
+
+/*navbar-toggle x icon start....*/
+
+.navbar-toggler .icon-bar:nth-of-type(2) {
+	  top: 1px;
+}
+
+.navbar-toggler .icon-bar:nth-of-type(3) {
+  	top: 2px;
+}
+
+.navbar-toggler .icon-bar {
+	  position: relative;
+	  transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+}
+
+.navbar-toggler.active .icon-bar:nth-of-type(1) {
+	  top: 6px;
+	  transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.navbar-toggler.active .icon-bar:nth-of-type(2) {
+	  background-color: transparent;
+}
+
+.navbar-toggler.active .icon-bar:nth-of-type(3) {
+	  top: -6px;
+	  transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+/*navbar-toggle x icon end....*/
+.icons-section i{
+    color: #2571b3;
+}
+.welcome-section h1,.studentform-section h1{
+    font-size: 2.5rem;
+    color:#2571b3;
+}
+
+hr.style-eight {
+	width: 250px;
+    border: 0;
+    height: 2px;
+    position:relative;
+    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgb(37, 113, 179) 50%, rgba(0,0,0,0) 90%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgb(37, 113, 179) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgb(37, 113, 179) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgb(37, 113, 179) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgb(37, 113, 179) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* W3C */
+    
+}
+
+hr.style-eight:before {
+    content: "";
+    display: block;
+    border-top: solid 1px #f9f9f9;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+.welcome-section h5{
+    color: #2571b3;
+}
+.footer-section{
+    background: #2571b3;
+    color: #FFF;
+}
+
+.stepwizard-step p {
+    margin-top:35px;
+    padding-left: 15px;
+}
+.stepwizard-row {
+    display: table-row;
+}
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+.stepwizard-row:before {
+    top: -45px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 4px;
+    background-color: #ccc;
+    z-order: 0;
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+.stepwizard-step a{
+    background: #CCC;
+    color: #000;
+    position: absolute;
+    top: 0;
+    margin-left:-10px;
+}
+.stepwizard-step a.btn-primary{
+    background: #2571b3;
+    border-color: #2571b3;
+    color:#FFF;
+    box-shadow: 0 0 0px 5px #2571b399;
+}
+.studentform-section h5{
+    color: #2571b3;
+}
+.studentform-section span{
+    color: red;
+}
+.studentform-section ul.list-unstyled b{
+      color: #2571b3;
+}
+#step-3{
+    overflow-x: hidden;
+}
+.has-error input{
+    border: 1px solid red;
+}
+.studentform-section input:focus{
+    box-shadow: none;
+}
+
+.stepwizard-row .btn-default[disabled]{
+background-color: #fff;
+border-color: #ccc;
+}
+
+.stepwizard-row .btn[disabled] {
+    pointer-events: none;
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 1;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #2571b3;
+}
+.studentform-section .btn-primary{
+    background: #2571b3;
+    border-color: #2571b3;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    border: 1px solid #2571b3 !important;
+    background: #2571b3 !important;
+    color: #FFF !important;
+}
+
+@media(max-width:504px){
+    .stepwizard-step p {
+    margin-top:35px;
+    padding-left: 15px;
+font-size: 12px;
+} 
+  .stepwizard-row::before {
+    top: -50px;
+    }
+    
+}
+
+@media (min-width: 576px) {
+        .stepwizard-step p {
+    margin-top:40px;
+    padding-left: 15px;
+        font-size: 12px;
+}
+}
+@media (min-width: 768px) {
+    .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+        .stepwizard-step p {
+    margin-top:35px;
+    padding-left: 15px;
+        font-size: 1rem;
+} 
+}
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}
+

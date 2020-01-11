@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+     
+    <style type="text/css">
+      
+    </style>
+
+    <title>Music School</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/logo_light.png" class="img-fluid"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mt-3 mt-md-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Students
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="student.html">New</a>
+              <a class="dropdown-item" href="#">Modify</a>
+              <a class="dropdown-item" href="#">Delete</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Lessons 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Assessment</a>
+              <a class="dropdown-item" href="#">New</a>
+              
+              <a class="dropdown-item" href="#">Change</a>
+              <a class="dropdown-item" href="#">Cancel</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Rooms
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Rehearsal</a>
+              <a class="dropdown-item" href="#">Recording</a>
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Admin 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Add Tutor Details</a>
+              <a class="dropdown-item" href="#">Modify Tutor Details</a>
+              
+              <a class="dropdown-item" href="#">Disable Tutor</a>
+              <a class="dropdown-item" href="#">Room Administration</a>
+              <a class="dropdown-item" href="#">Lesson Type</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Schedule
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Tutor Holidays</a>
+              <a class="dropdown-item" href="#">Weekly schedule</a>
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Reports 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Add News item</a>
+              <a class="dropdown-item" href="#">Forms</a>
+              
+            </div>
+          </li>
+        </ul>
+       
+      </div>
+      </div>
+    </nav>
+
+
+    <div class="row no-gutters mt-5 icons-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="list-inline float-right">
+              <li class="list-inline-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa fa-print" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="row no-gutters">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="stepwizard">
+              <div class="stepwizard-row setup-panel">
+              <div class="stepwizard-step">
+              <a href="#step-1"  class="btn btn-primary btn-circle">1</a>
+              <div class="clearfix"></div>
+              <p>Student Details</p>
+              </div>
+              <div class="stepwizard-step">
+              <a href="#step-2"  class="btn btn-default btn-circle" disabled="disabled">2</a>
+              <div class="clearfix"></div>
+              <p>Gurdian Details</p>
+              </div>
+              <div class="stepwizard-step">
+              <a href="#step-3"  class="btn btn-default btn-circle" disabled="disabled">3</a>
+              <div class="clearfix"></div>
+              <p>Student Lessons</p>
+              </div>
+              <div class="stepwizard-step">
+              <a href="#step-4"  class="btn btn-default btn-circle" disabled="disabled">4</a>
+              <div class="clearfix"></div>
+              <p>Assign Tutor</p>
+              </div>
+
+              <div class="stepwizard-step">
+              <a href="#step-5"  class="btn btn-default btn-circle" disabled="disabled">5</a>
+              <div class="clearfix"></div>
+              <p>Book Assessment </p>
+              </div>
+              </div>
+            </div>
+
+
+
+            <form role="form" action="" method="post" class="studentform-section">
+              <div class="setup-content" id="step-1">
+                <div class="row">
+                <div class="col-12">
+                  <h1 class="display-4 text-center mt-4 mb-5">Student Details</h1>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <h5>Personal</h5>
+                  <hr>
+              
+                 
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">First Name <span>*</span></label>
+                        <input type="text" class="form-control"  placeholder="First Name" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Surname <span>*</span></label>
+                        <input type="text" class="form-control"  placeholder="Surname" required>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputAddress">MiddleName</label>
+                      <input type="text" class="form-control"  placeholder="MiddleName">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputAddress">Date of Birth <span>*</span></label>
+                      <input type="text" class="form-control custom-select"  placeholder="Date of Birth" id="datepicker" required>
+                    </div>
+
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline">
+                    <label class="custom-control-label" for="customControlInline">Agrees to Terms & Conditions</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline2">
+                    <label class="custom-control-label" for="customControlInline2">Agrees to Marketing by CompanyX</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline3">
+                    <label class="custom-control-label" for="customControlInline3">Agrees to 3rd party Marketing</label>
+                    </div>
+
+                    
+                  </div>
+
+                  <div class="col-12 col-sm-6">
+              
+                  <h5 class="mt-4 mt-sm-0">Contact</h5>
+                  <hr>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Mobile <span>*</span></label>
+                        <input type="text" class="form-control" placeholder="Mobile" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Landline <span>*</span></label>
+                        <input type="text" class="form-control" placeholder="Landline" required>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputAddress">Address Line 1 <span>*</span></label>
+                      <input type="text" class="form-control"  placeholder="Address Line 1" required>
+                    </div>
+
+                     <div class="form-group">
+                      <label for="inputAddress">Address Line 2 <span>*</span></label>
+                      <input type="text" class="form-control"  placeholder="Address Line 2" required>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Town <span>*</span></label>
+                        <input type="text" class="form-control"  placeholder="Town" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Postal code <span>*</span></label>
+                        <input type="text" class="form-control"  placeholder="Postal code" required>
+
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputAddress">Email</label>
+                      <input type="email" class="form-control" id="inputAddress" placeholder="Email">
+                    </div>
+
+
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Contact Preference</label>
+                      <select class="form-control custom-select" id="exampleFormControlSelect1">
+                        <option>Unassgined</option>
+                        <option>Phone</option>
+                        <option>Email</option>
+                       
+                      </select>
+                    </div>
+
+                    
+
+                    <button type="button" class="btn btn-primary nextBtn">Add Student</button>
+                  </div>
+                </div>
+                 
+                
+              </div>
+
+
+
+
+
+
+              <div class="setup-content" id="step-2">
+                <div class="row">
+                <div class="col-12">
+                  <h1 class="display-4 text-center mt-4 mb-5">Gurdian Details</h1>
+                </div>
+                <div class="col-sm-6">
+                <div>
+                  <h5>Student Information</h5>
+                  <hr>
+                  <ul class="list-unstyled mb-4">
+                    <li><b>Student Name</b> : Daniel Dsoza</li>
+                    <li><b>Branch Identifier</b> : Xavier School</li>
+                    <li><b>Student Identifier</b> : High School</li>
+                  </ul>
+
+                </div>
+                <div>
+                  <h5>Gurdian</h5>
+                  <hr>
+              
+                 
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">First Name <span>*</span></label>
+                        <input type="text" class="form-control"  placeholder="First Name" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Surname <span>*</span></label>
+                        <input type="text" class="form-control"  placeholder="Surname" required>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputAddress">MiddleName</label>
+                      <input type="text" class="form-control"  placeholder="MiddleName">
+                    </div>
+
+                     <div class="form-group">
+                      <label for="inputAddress">Date of Birth <span>*</span></label>
+                      <input type="text" class="form-control custom-select"  placeholder="Date of Birth" id="datepicker2" required>
+                    </div>
+
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline4">
+                    <label class="custom-control-label" for="customControlInline4">Agrees to Terms & Conditions</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline5">
+                    <label class="custom-control-label" for="customControlInline5">Agrees to Marketing by CompanyX</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline6">
+                    <label class="custom-control-label" for="customControlInline6">Agrees to 3rd party Marketing</label>
+                    </div>
+                    </div>
+                    
+                  </div>
+
+                  <div class="col-sm-6">
+              
+                  <h5 class="mt-4 mt-sm-0">Gurdian Contact</h5>
+                  <hr>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Mobile <span>*</span></label>
+                        <input type="text" class="form-control" placeholder="Mobile" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Landline <span>*</span></label>
+                        <input type="text" class="form-control" placeholder="Landline" required>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputAddress">Address Line 1 <span>*</span></label>
+                      <input type="text" class="form-control"  placeholder="Address Line 1" required>
+                    </div>
+
+                     <div class="form-group">
+                      <label for="inputAddress">Address Line 2 <span>*</span></label>
+                      <input type="text" class="form-control"  placeholder="Address Line 2" required>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Town <span>*</span></label>
+                        <input type="text" class="form-control"  placeholder="Town" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Postal code <span>*</span></label>
+                        <input type="text" class="form-control"  placeholder="Postal code" required>
+
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputAddress">Email</label>
+                      <input type="email" class="form-control" id="inputAddress" placeholder="Email">
+                    </div>
+
+
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Contact Preference</label>
+                      <select class="form-control custom-select" id="exampleFormControlSelect1" >
+                        <option>Unassgined</option>
+                        <option>Phone</option>
+                        <option>Email</option>
+                       
+                      </select>
+                    </div>
+
+                    
+
+                    <button type="button" class="btn btn-primary nextBtn">Add Gurdian</button>
+                  </div>
+                </div>
+              </div>
+
+
+<!-- step 3 -->
+
+              <div class="row setup-content" id="step-3">
+                <div class="row">
+                <div class="col-12">
+                  <h1 class="display-4 text-center mt-4 mb-5">Select Lession Type</h1>
+                </div>
+                 <div class="col-sm-12">
+                  <div class="col-12">
+                  <h5>Student Information</h5>
+                  <hr>
+                  <ul class="list-unstyled mb-4">
+                    <li><b>Student Name</b> : Daniel Dsoza</li>
+                    <li><b>Branch Identifier</b> : Xavier School</li>
+                    <li><b>Student Identifier</b> : High School</li>
+                  </ul>
+                  </div>
+
+                </div>
+                <div class="col-6">
+               
+                <div class="col-12">
+                  <h5>Lessons</h5>
+                  <hr>
+              
+                 
+                    <div class="form-row">
+                      <div class="form-group col-md-6 col-lg-3">
+                        <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Guitar">
+                        <label class="custom-control-label" for="Guitar">Guitar</label>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-6 col-lg-3">
+                        <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Bass">
+                        <label class="custom-control-label" for="Bass">Bass</label>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-6 col-lg-3">
+                        <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Vocals">
+                        <label class="custom-control-label" for="Vocals">Vocals</label>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-6 col-lg-3">
+                        <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Drums">
+                        <label class="custom-control-label" for="Drums">Drums</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      
+                      <div class="form-group col-md-6 col-lg-3">
+                        <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Ukulele">
+                        <label class="custom-control-label" for="Ukulele">Ukulele</label>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-6 col-lg-3">
+                        <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Keyboards">
+                        <label class="custom-control-label" for="Keyboards">Keyboards</label>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-6 col-lg-3">
+                        <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Piano">
+                        <label class="custom-control-label" for="Piano">Piano</label>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-6 col-lg-3">
+                        <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Percission">
+                        <label class="custom-control-label" for="Percission">Percission</label>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="form-row">
+                      
+                      <div class="form-group col-md-6 col-lg-3">
+                        <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Theory">
+                        <label class="custom-control-label" for="Theory">Theory</label>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-6 col-lg-3">
+                        <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Records">
+                        <label class="custom-control-label" for="Records">Records</label>
+                        </div>
+                      </div>
+                    </div>
+
+                   
+                    </div>
+                    
+                  </div>
+
+                  <div class="col-6">
+              
+                  <h5>Studio Hire</h5>
+                  <hr>
+                    <div class="form-row mb-5">
+                      
+                      <div class="form-group col-md-6 col-lg-3">
+                        <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="recordingstudio">
+                        <label class="custom-control-label" for="recordingstudio">Recording Studio</label>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-6 col-lg-3">
+                        <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="rehearsalroom">
+                        <label class="custom-control-label" for="rehearsalroom">Rehearsal Room</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+
+                    <button type="button" class="btn btn-primary nextBtn">Add Services</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- step 4 -->
+
+              <div class="setup-content" id="step-4">
+                <div class="row">
+                <div class="col-12">
+                  <h1 class="display-4 text-center mt-4 mb-5">Assign Tutor</h1>
+                </div>
+                <div class="col-12"><p>tutor section will be here</p></div>
+                <button type="button" class="btn btn-primary nextBtn ml-auto">Next</button>
+              </div>
+              </div>
+
+
+          <!-- step 5 -->
+
+              <div class="setup-content" id="step-5">
+                <div class="row">
+                <div class="col-12">
+                  <h1 class="display-4 text-center mt-4 mb-5">Book Assessment </h1>
+                </div>
+                <div class="col-12"><p>Book Assessment section will be here</p></div>
+                <button type="submit" class="btn btn-primary ml-auto">Submit</button>
+              </div>
+              </div>
+
+
+
+            </form>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+  
+
+
+    <div class="row no-gutters footer-section mt-5">
+      <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+            <small>Copyright © Company Ltd 2018 . All rights reserved.</small>
+            </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+  
+    </script>
+  </body>
+</html>
